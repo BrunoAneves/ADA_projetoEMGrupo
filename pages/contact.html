@@ -1,126 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/color.css" />
+    <link rel="stylesheet" href="../styles/style-index.css" />
+    <link rel="stylesheet" href="../styles/contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,500;0,700;0,1000;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../styles/color.css" />
-  <link rel="stylesheet" href="../styles/style-index.css" />
-  <link rel="stylesheet" href="../styles/contact.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,500;0,700;0,1000;1,300&display=swap"
-    rel="stylesheet">
-  <title>Document</title>
-</head>
+  <body id="contact-body">
+    <header>
+      <nav class="header_nav">
+        <button class="menu-toggle" id="menuToggle">&#9776;</button>
 
-<body id="contact-body">
-  <header>
-    <nav class="header_nav">
+        <ul class="nav_list">
+          <button class="menu-toggle2" id="menuToggle2">X</button>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="#">Carros</a></li>
+          <li><a href="../pages/tabelaDeCarros.html">Tabela de Carros</a></li>
+          <li><a href="../pages/contact.html">Contate-nos</a></li>
+        </ul>
+      </nav>
+    </header>
 
-
-      <button class="menu-toggle" id="menuToggle">&#9776;</button>
-
-      <ul class="nav_list ">
-        <button class="menu-toggle2" id="menuToggle2">X</button>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="#">Carros</a></li>
-        <li><a href="../pages/tabelaDeCarros.html">Tabela de Carros</a></li>
-        <li><a href="../pages/contact.html">Contate-nos</a></li>
-
-      </ul>
-
-    </nav>
-  </header>
-
-
-
-
-  <main>
-
-
-
-
-    <div id="contact-top">
-      <h1>Contate-nos</h1>
-      <p>
-        Entre em contato para saber mais sobre nossos carros, soluções e
-        serviços. Ou deixe sua sugestão.
-      </p>
-    </div>
-    <div>
-      <form id="contact-form">
-        <table id="contact-table">
-          <tr>
-            <td class="contact-table-td">
-              <label for="nome">Nome:</label>
-              <input type="text" id="nome" name="nome" class="contact-form-input" required />
-            </td>
-          </tr>
-          <tr>
-            <td class="contact-table-td">
-              <label for="email">E-mail:</label>
-              <input type="email" id="email" name="email" class="contact-form-input" required />
-            </td>
-          </tr>
-          <tr>
-            <td class="contact-table-td" colspan="2">
-              <label for="assunto">Assunto:</label>
-              <input type="text" id="assunto" name="assunto" class="contact-form-input" required />
-            </td>
-          </tr>
-          <tr>
-            <td class="contact-table-td" colspan="2">
-              <label for="mensagem">Mensagem:</label>
-              <textarea id="mensagem" name="mensagem" rows="4" class="contact-form-textarea" required></textarea>
-            </td>
-          </tr>
-          <tr>
-            <td class="contact-table-td" colspan="2">
-              <input type="submit" value="Enviar" id="contact-form-submit" />
-            </td>
-          </tr>
-        </table>
-      </form>
-    </div>
-    <div class="contact-container">
-      <div class="contact-container-inner-div">
+    <main>
+      <div id="contact-top">
+        <h1>Contate-nos</h1>
         <p>
-          <b>Ligue para nós:</b><br /><br />
-          +55 11 2345-6789
-          <a href="https://api.whatsapp.com/send?phone=+551123456789" class="whatsapp-button" target="_blank">
-            <img src="../src/assets/icons/icone-whatsapp.png" class="contact-container-inner-div-whatsapp-icon"
-              alt="Ícone do WhatsApp" />
-          </a>
+          Entre em contato para saber mais sobre nossos carros, soluções e
+          serviços. Ou deixe sua sugestão.
         </p>
       </div>
-      <div class="contact-container-inner-div">
-        <p>
-          <b>Horário de funcionamento:</b><br /><br />
-          Segunda|Sexta: 8h - 18h <br />
-          Sabado|Domingo: 8h - 12h
-        </p>
+      <div class="main-form">
+        <form id="contact-form">
+          <table id="contact-table">
+            <tr>
+              <td class="contact-table-td">
+                <label for="nome">Nome:</label>
+                <input
+                  type="text"
+                  id="nome"
+                  name="nome"
+                  class="contact-form-input"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="contact-table-td">
+                <label for="email">E-mail:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="contact-form-input"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="contact-table-td" colspan="2">
+                <label for="assunto">Assunto:</label>
+                <input
+                  type="text"
+                  id="assunto"
+                  name="assunto"
+                  class="contact-form-input"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="contact-table-td" colspan="2">
+                <label for="mensagem">Mensagem:</label>
+                <textarea
+                  id="mensagem"
+                  name="mensagem"
+                  rows="4"
+                  class="contact-form-textarea"
+                  required
+                ></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td class="contact-table-td" colspan="2">
+                <input type="submit" value="Enviar" id="contact-form-submit" />
+              </td>
+            </tr>
+          </table>
+        </form>
       </div>
-      <div class="contact-container-inner-div">
-        <p>
-          <b>Nossa localização:</b><br /><br />
-          Av. Brig. Faria Lima, 1306 - Pinheiros, São Paulo - SP, 01451-001
-        </p>
+      <div class="contact-container">
+        <div class="contact-container-inner-div">
+          <p>
+            <b>Ligue para nós:</b><br /><br />
+            +55 11 2345-6789
+            <a
+              href="https://api.whatsapp.com/send?phone=+551123456789"
+              class="whatsapp-button"
+              target="_blank"
+            >
+              <img
+                src="../src/assets/icons/icone-whatsapp.png"
+                class="contact-container-inner-div-whatsapp-icon"
+                alt="Ícone do WhatsApp"
+              />
+            </a>
+          </p>
+        </div>
+        <div class="contact-container-inner-div">
+          <p>
+            <b>Horário de funcionamento:</b><br /><br />
+            Segunda|Sexta: 8h - 18h <br />
+            Sabado|Domingo: 8h - 12h
+          </p>
+        </div>
+        <div class="contact-container-inner-div">
+          <p>
+            <b>Nossa localização:</b><br /><br />
+            Av. Brig. Faria Lima, 1306 - Pinheiros, São Paulo - SP, 01451-001
+          </p>
+        </div>
       </div>
-    </div>
-    <div>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d58511.6929542022!2d-46.7211496!3d-23.5691327!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5786b7831717%3A0x13dc48ab54d37aba!2sAda%20Tech!5e0!3m2!1spt-BR!2sbr!4v1697937862895!5m2!1spt-BR!2sbr"
-        width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-  </main>
+      <div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d58511.6929542022!2d-46.7211496!3d-23.5691327!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5786b7831717%3A0x13dc48ab54d37aba!2sAda%20Tech!5e0!3m2!1spt-BR!2sbr!4v1697937862895!5m2!1spt-BR!2sbr"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </main>
 
-
-
-  <script src="../js/scriptTabelaDeCarros.js"></script>
-</body>
-
+    <script src="../js/scriptTabelaDeCarros.js"></script>
+  </body>
 </html>
